@@ -1,2 +1,3 @@
 package=org.libsdl
-headerFilter=SDL_*.h
+headers=SDL.h
+compilerOpts=-msse4.2

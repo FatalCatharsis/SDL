@@ -99,7 +99,7 @@ kotlin {
                         listOf("make")
                     }
                 }
-                getByName(binariesTaskName).dependsOn(makeTask)
+                getByName(compileKotlinTaskName).dependsOn(makeTask)
             }
 
             cinterops {
