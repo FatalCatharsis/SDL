@@ -1,0 +1,2 @@
+package=org.libsdl
+headerFilter=SDL_*.h
