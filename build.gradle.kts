@@ -111,7 +111,6 @@ kotlin {
 
             kotlinOptions {
                 freeCompilerArgs = listOf("-include-binary", cmakeDirectory.resolve("libSDL2.a").toString())
-
             }
         }
     }
