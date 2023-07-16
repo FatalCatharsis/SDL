@@ -1,5 +1,6 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 import org.jetbrains.kotlin.konan.target.KonanTarget
+import org.jetbrains.kotlin.konan.target.linker
 
 plugins {
     kotlin("multiplatform") version "1.9.0"
@@ -47,6 +48,7 @@ kotlin {
         "SDL_THREADS",
         "SDL_TIMERS",
         "SDL_VIDEO",
+        "SDL_VULKAN"
     )
 
     val disabledSdlSubsystems = listOf(
@@ -73,7 +75,6 @@ kotlin {
         "SDL_TESTS",
         "SDL_VIRTUAL_JOYSTICK",
         "SDL_VIVANTE",
-        "SDL_VULKAN",
         "SDL_X11"
     )
 
@@ -110,6 +111,7 @@ kotlin {
 
             kotlinOptions {
                 freeCompilerArgs = listOf("-include-binary", cmakeDirectory.resolve("libSDL2.a").toString())
+
             }
         }
     }
