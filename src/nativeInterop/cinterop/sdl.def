@@ -1,3 +1,3 @@
 package=org.libsdl
-headers=SDL.h
+headers=SDL.h SDL_Vulkan.h
 compilerOpts=-msse4.2
